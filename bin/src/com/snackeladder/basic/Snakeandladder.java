@@ -7,6 +7,7 @@ public class Snakeandladder {
 		 * Variable defining player position in game
 		 */
 		int position = 0;
+		int count_dieRoll = 0;
 		
 		final int NO_PLAY = 1;
 		final int LADDER = 2;
@@ -21,6 +22,8 @@ public class Snakeandladder {
 	
     int dieno = random.nextInt(6)+1;
    System.out.println("Die Number="+dieno);
+   
+   count_dieRoll++;
    
   int option =  random.nextInt(3)+1;
  System.out.println("The Player Option Number= "+option);
@@ -48,6 +51,7 @@ public class Snakeandladder {
 	  System.out.println("Winning Position= "+position);
 	  
 		  }
+	System.out.println("Total Count of Die Roll to Win the Game ="+count_dieRoll);
 	}
 
 }
